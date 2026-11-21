@@ -48,13 +48,13 @@ The `Policy for Trainee` settings object is created beforehand. The Group Policy
 
 ## Troubleshooting Notes
 
-- **VirtualBox setup error** ("Windows cannot find the Microsoft Software License Terms"): skip unattended install and check the ISO.
-- **"Cannot find an object with identity":** the users did not exist yet, so I created them first.
-- **GPO not showing in `gpresult`:** it needed `gpupdate /force` to refresh.
+- **VirtualBox setup error** ("Windows cannot find the Microsoft Software License Terms"): skip unattended install and check the ISO. This is a common issue that occurs
+- **"Cannot find an object with identity":** Create your users first like I did then find the object with identity
+- **GPO not showing in `gpresult`:** it needed `gpupdate /force` to refresh like a complete force to fix it
 
 ## Key Takeaway
 
-Password rules come from a fine-grained password policy, while the screen lock comes from a Group Policy Object. They are separate features, and I verified each one instead of assuming it applied.
+Password rules come from a fine-grained password policy, while the screen lock comes from a Group Policy Object. Seperate features but I verified it before hand
 
 ## Screenshots
 
